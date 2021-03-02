@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LoopWhile {
+public class EntendendoLoopWhile {
 
 	public static void main(String[] args) {
 		/*Imagine que uma ONG precise saber a média de idades dos alunos de uma escola.
@@ -9,13 +9,9 @@ public class LoopWhile {
 		double media =0;
 		int quantidadeAlunos = 0;
 		Scanner leitor = new Scanner(System.in);
-		int totalAlunos;
-		
-		System.out.println("Por favor, informe a quantidade de alunos que você pretende inserir");
-		totalAlunos = leitor.nextInt();
 		
 		
-		while(quantidadeAlunos < totalAlunos) {
+		while(quantidadeAlunos <5) {
 			System.out.println("Informe a idade do " + (quantidadeAlunos + 1)+"º aluno");
 			idade = leitor.nextInt();
 			media = media + idade;
@@ -24,8 +20,10 @@ public class LoopWhile {
 			//quantidadeAlunos ++; "++" = somar 1
 		}
 		
-		media = media/(double)totalAlunos;
+		media = media/5.0;
 		System.out.println("A média das idades é " + media);
 	}
 
-}
+
+	}
+
